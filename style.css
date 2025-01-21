@@ -1,0 +1,187 @@
+@font-face {
+    font-family: idroid;
+    src: url(fontes/idroid.otf) format(truetype);
+}
+*{
+    font-family: Arial, Helvetica, sans-serif
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #84E1AD;
+}
+header{
+    color: white;
+    background-image: linear-gradient(to top, #1A5C38, #3CD782);
+}
+header h1,
+header p{
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+header nav{
+    display: flex;
+    list-style: none;
+}
+header nav a{
+    font-weight: 700;
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+.menu-item-1{
+    margin-left: 10px;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section{
+    width: 900px;
+    background-color: white;
+}
+section .container p{
+    margin: 20px;
+}
+#section-text .container h1,
+#section-text .container h2{
+    margin: 20px;
+    color: #205F3D;
+    font-family: idroid;
+}
+section .container h2{
+    background-image: linear-gradient(to right, #C8EDD8, white);
+}
+.container .img-celular{
+    display: none;
+}
+.imagens{
+    display: flex;
+    justify-content: center;
+}
+#section-video .container{
+    display: flex;
+    justify-content: center;
+    background-color: #1B5D39;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+#section-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#section-list .container{
+    width: 96%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #C5EBD6;
+    border-radius: 15px;
+}
+#section-list .box-list-header h3{
+    margin: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-size: 22px;
+    background-color: #2fa866;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: white;
+}
+
+#section-list .box-list-body .box-list-itens{
+    display: flex;
+}
+
+#section-list .box-list-body ul{
+    list-style: none;
+    padding-right: 80px;
+}
+#section-list,
+#section-video,
+#section-text{
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.473);
+}
+#section-list{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 10px;
+}
+#section-list p{
+    margin-left: 25px;
+}
+footer{
+    background-color: #1A5C38;
+    padding: 15px;
+    text-align: center;
+}
+footer p{
+    font-size: 20px;
+    margin: 0;
+    color: white;
+}
+span{ 
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+    TALVEZ PRECISE USAR !!!!
+
+#section-list .box-list{
+    display: flex;
+}
+#section-list .box-list-itens{
+    display: flex;
+}
+
+.box-list .box-list-header{
+    background-color: #2FA866;
+}
+
+
+*/
+@media (max-width: 950px) {
+    section{
+        width: auto;
+    }
+    .container .img-pc{
+        display: none;
+    }
+    .container .img-celular{
+        display: block;
+    }
+}
